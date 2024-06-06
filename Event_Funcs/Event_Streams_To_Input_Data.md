@@ -30,3 +30,12 @@ At this point there will be a folder of equal sized csv files. This is the input
 
 **See:** [csvToImg.py](csvToImg.py) for this creation process.
 
+## (Optional) Logging Class Data for Class Construction
+
+Depending on the source and the experiment characteristics, an event stream may contain more than 1 regime. In this case, scrub through image data, classifying data according to nearest regime. Log information to ensure completion and avoid redundancy.
+
+**See:** [Experiment_Log.xlsx](Experiment_Log.xlsx) for an example
+
+## Splitting Complete Class Dataset into Test and Train Data
+
+Once a directory of folders, each containing only one class, is constructed, the PyPI package [split-folders](https://pypi.org/project/split-folders/) can be used to create the final dataset.

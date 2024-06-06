@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+############### This file calculates timescale of csv files. Likely will not come into use ##########################
+
 # Check if a folder is provided as an argument
 if [ $# -eq 0 ]; then
     echo "Usage: $0 <folder_path>"
