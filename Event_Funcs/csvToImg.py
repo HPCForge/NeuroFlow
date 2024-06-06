@@ -16,8 +16,10 @@ def csvToFrame(filename):
 
     data = Image.fromarray(np.invert((img_grid * 255).astype(np.uint8)))
 
+    ## OUTPUT FOLDER ##
     data.save('../V55imgs/' + os.path.basename(filename).split('.')[0] + '_image.png')
 
+## INPUT FOlDER ##
 path = './V55CSV/'
 
 i = 0
