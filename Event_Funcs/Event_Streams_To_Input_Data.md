@@ -22,7 +22,9 @@ Each new csv file is renamed according to the iterator value and the original na
 
 **See:** [splitFullCSVToEqualFrames.py](splitFullCSVToEqualFrames.py) for splitting process
 
-*Note: The final file will be shorter than 50,000 events. To accommodate this, the file [removeSmaller.sh](removeSmaller.sh) will remove the offending file.*
+*Note 1: The final file will be shorter than 50,000 events. To accommodate this, the file [removeSmaller.sh](removeSmaller.sh) will remove the offending file.*
+
+*Note 2: LSTM Data can stop here. Additionally, LSTM data is chunked into groups of 5,000, not 50,000*
 
 ## Convert Equal Sized Chunks to Image Input Data
 
